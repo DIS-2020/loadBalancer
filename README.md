@@ -6,7 +6,7 @@ Hvis I har klonet dette repository, burde disse komponenter gerne være der.
 
 ## Server.js
 ### Step 1
-Start i jeres server. Her skal i require 'http' og 'seaport' og gemme dem i en variabel. Samtidig skal i gemme en variabel bestående af objektet seaport.connect('localhost', 9090). Det er fra denne seaport instans, hvor jeres servere registreres.
+Vi starter med serveren. Her skal I require 'http' og 'seaport' og gemme dem i en variabel. Samtidig skal I gemme en variabel bestående af objektet seaport.connect('localhost', 9090). Det er fra denne seaport instans, hvor jeres servere registreres.
 
 ### Step 2
 For at simulerer et eller andet funktionalitet, lav en funktion, der indeholder et for-loop der for eksempel tæller summen af alle tal under 100000 og returnerer resultatet.
@@ -29,7 +29,7 @@ Lav nu en proxy ved hjælp af httpProxy.createProxyServer(). Denne vil gøre det
 Lav nu en http-socket som I har gjort på serveren. Heri kan lave en callback-function der bruger *SEAPORT VARIABEL*.query() der søger igennem alle registrerede servere. Dette kan gemmes som et array. Hvis denne array er tom, kan der for eksempel sendes en respons, der siger at ingen server er ledig.
 
 ### Step 4
-Næste skridt er at sørge for at vores proxy itererer igennem vores array hver gang den får en request. Jeg har givet jer en måde hvorpå det kan gøres. Heri bruges *i* som tælle-variabel, og hver gang instansen bliver initieret, sætter vi *i* til restværdien af i + 1 og længden af array'en. Til sidst bruges vores proxy-instans til at kalde proxy.web og sender vores request videre til vores mål.
+Næste skridt er at sørge for at vores proxy itererer igennem vores array hver gang den får en request. Jeg har givet jer en måde hvorpå det kan gøres. Heri bruges *i* som tælle-variabel, og hver gang instansen bliver initieret, sætter vi *i* til restværdien af i + 1 og længden af array'en. Til sidst bruges vores proxy-instans til at kalde proxy.web og sender vores request videre til vores mål. Hvis bruger dette, skal det blot implementeres i http-socket'ens callback-function.
 
 ### Step 5
 Til slut skal load balanceren sættes til at lytte på en port (8080 for http), ligesom vi har gjort i vores andre øvelser.
