@@ -6,19 +6,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "seaport": "./node_modules/.bin/seaport"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hasanmansur/BalanceYourLoad.git"
-  },
-  "author": "S M Hasan Mansur",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/hasanmansur/BalanceYourLoad/issues"
-  },
-  "homepage": "https://github.com/hasanmansur/BalanceYourLoad#readme",
-  "dependencies": {
-    "http-proxy": "^1.14.0",
-    "seaport": "^2.0.9"
   }
 }

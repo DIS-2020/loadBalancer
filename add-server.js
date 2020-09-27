@@ -1,6 +1,6 @@
 var http = require('http')
-, seaport = require('seaport')
-, ports = seaport.connect('localhost', 9090);
+seaport = require('seaport')
+ports = seaport.connect('localhost', 9090);
 
 function add () {
 	var n = 100000, sum = 0;
