@@ -32,7 +32,7 @@ Lav nu en http-socket som I har gjort på serveren. Heri kan lave en callback-fu
 Næste skridt er at sørge for at vores proxy itererer igennem vores array hver gang den får en request. Jeg har givet jer en måde hvorpå det kan gøres. Heri bruges *i* som tælle-variabel, og hver gang instansen bliver initieret, sætter vi *i* til restværdien af i + 1 og længden af array'en. Til sidst bruges vores proxy-instans til at kalde proxy.web og sender vores request videre til vores mål.
 
 ### Step 5
-Til slut skal load balanceren sættes til at lytte på en port, ligesom vi har gjort i vores andre øvelser.
+Til slut skal load balanceren sættes til at lytte på en port (8080 for http), ligesom vi har gjort i vores andre øvelser.
 
 For at starte jeres loadbalancer skal i skrive:
 - npm run seaport listen 9090 (hvis i har brugt port 9090)
